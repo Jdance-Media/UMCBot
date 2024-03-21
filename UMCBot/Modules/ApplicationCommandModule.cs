@@ -17,7 +17,7 @@ public class ApplicationCommandModule : InteractionModuleBase
     public async Task ApplyCommand()
     {
         await RespondWithModalAsync<ApplicationModal>("umc_application");
-    }
+    } 
 
     [ModalInteraction("umc_application")]
     public async Task ApplicationModalResponse(ApplicationModal modal)
