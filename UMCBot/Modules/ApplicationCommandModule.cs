@@ -13,11 +13,13 @@ public class ApplicationCommandModule : InteractionModuleBase
 {
     public const ulong ApplicationChannel = 0;
 
+    //This is a note put on the test branch.
+
     [SlashCommand("apply", "Command to start the application process for UMC.")]
     public async Task ApplyCommand()
     {
         await RespondWithModalAsync<ApplicationModal>("umc_application");
-    } 
+    }
 
     [ModalInteraction("umc_application")]
     public async Task ApplicationModalResponse(ApplicationModal modal)
